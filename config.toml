@@ -13,14 +13,10 @@ publishDir = "docs"
 
 # Menu
 [menu]
-    [[menu.nav]]
-    name = "About Us"
-    URL = "about"
-    weight = 2
 
     [[menu.nav]]
-    name = "Service"
-    URL = "services"
+    name = "How to ?"
+    URL = "how-to"
     weight = 3
 
     [[menu.nav]]
@@ -64,12 +60,11 @@ custom_css = ["css/custom.css"]
     [params.banner]
     enable = true
     bgImage = "images/slider/hero-area.jpg"
-    icon = "tf-ion-play"
-    heading = "Experience the new reality"
-    content= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!"
+    heading = "Xtrem Reading"
+    content= "Read 2 books in 1 hour"
     btn = true
-    btnText="Explore Us"
-    btnURL="#services"
+    btnText="How to ?"
+    btnURL="#how-to"
 
     # call to action
     [params.cta]
