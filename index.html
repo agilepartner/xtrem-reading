@@ -1,302 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Xtrem Reading - Read 2 books in 1 hour">
-    <meta name="author" content="Cédric Tamavond & Yoan Thirion">
-    <title>Xtrem Reading</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet"> 
-    <link href="css/lightbox.css" rel="stylesheet"> 
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
+  <title>Xtrem Reading</title>
 
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="Cédric Tamavond & Yoan Thirion. ">
+  <meta name="description" content="A technique that allows you to read 2 books in 1 hour in a collaborative way.">
+
+  <meta property="og:url"                content="https://www.xtrem-reading.com/i" />
+  <meta property="og:type"               content="Website" />
+  <meta property="og:title"              content="Xtrem Reading" />
+  <meta property="og:description"        content="A technique that allows you to read 2 books in 1 hour in a collaborative way." />
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/buddy.min.css">
+
+  <script type="text/javascript" src="js/buddy.min.js"></script>
+</head>
 <body>
-	<header id="header">      
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 overflow">
-                   <div class="social-icons pull-right">
-                        <ul class="nav nav-pills">
-                            <li><a href="https://twitter.com/yot88" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/yoanthirion/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div> 
-                </div>
-             </div>
-        </div>
-        <div class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+  <div id="pageNavOverlay"></div>
 
-                    <a class="navbar-brand" href="index.html">
-                    	<h1><img src="images/logo.png" alt="logo"></h1>
-                    </a>
-                    
-                </div>
-                <div class="collapse navbar-collapse">
-				
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#why">Why</a></li>		
-						<li><a href="#how">How to</a></li>		
-						<li><a href="#facilitation">Facilitation</a></li>		
-						<li><a href="#resources">Resources</a></li>		
-						<li><a href="#footer">Contact</a></li>		
-						   
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--/#header-->
 
-    <section id="home-slider">
-        <div class="container">
-            <div class="row">
-                <div class="main-slider">
-                    <div class="slide-text">
-                        <h1>Xtrem Reading</h1>
-                        <h2>Read 2 books in 1 hour</h2>
-                        <p>A technique that allows you to read 2 books in 1 hour in a collaborative way.</p>
-                    </div>
-                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
-                    <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
-                    <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
-                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
-                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
-                </div>
-            </div>
-        </div>
-        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
-    </section>
-    <!--/#home-slider-->
+  <!-- .bottom-bar-mobile is used only when you have 5 items MAX, don't use this navigation if you have more than 5 items or less than 3 items,
+  sub navigations are hidden if you use .bottom-bar-mobile, the goal is to have a direct approach on the main info -->
+  <header class="page-header" role="banner">
+    <div class="page-wrapper page-wrapper--full-width">
+      <a href="#" class="page-header__logo-color"><img src="images/xtrem-reading-logo.png"  alt=" " /></a>
+      <div class="page-nav" id="navOne">
+        <nav role="navigation">
+          <ul class="nav-primary">
+            <li><a href="#home" class="nav-primary--selected">Home</a></li>
+            <li><a href="#why">Why</a></li>
+            <li><a href="#howto">How to</a></li>
+            <li><a href="#facilitation">Facilitation</a></li>
+            <li><a href="#ressources">Ressources</a></li>
+            <li><a href="mailto:xtremreading@gmail.com">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="page-header--mobile">
+    <a href="#" class="page-header__logo-color"><img src="images/xtrem-reading-logo.png"  alt=" " /></a>
+    <a href="#" class="page-header__logo-white"><img src="images/xtrem-reading-logo.png"  alt=" " /></a>
+    <button class="trigger-nav-container" data-trigger-nav="navOne">
+      <span class="trigger-nav-container__title">Menu</span>
+      <span class="trigger-nav-container__icon-burger"></span>
+    </button>
+  </div>
 
-    <section id="why">
-        <div class="container">
-            <div class="row">
-                <h1 class="title">Why you should use it ?</h1>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <img src="images/home/collective-intelligence.png" alt="">
-                        </div>
-                        <h2>Boost your collective intelligence</h2>
-                        <p>Collective intelligence strongly contributes to the shift of knowledge and power from the individual to the collective.
-                            Reading collectively helps you being motivated to read more books.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <img src="images/home/retention.png" alt="">
-                        </div>
-                        <h2>Increase your book retention</h2>
-                        <p>Because you read in a way you will present what you have taken from a book, you will increase your retention from the book.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                            <img src="images/home/nothing.png" alt="">
-                        </div>
-                        <h2>Do not read for nothing anymore</h2>
-                        <p>Filter your entire library in a few sessions and prioritize your next readings.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="how">
-        <div class="container">
-            <div class="row">
-                <h1 class="title">How to ?</h1>
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/Step1.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2 class="steps">Each participant brings a book</h2>
-                        <P>Bring the book that you really want to read in a near future.</P>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2 class="steps">Share your choices</h2>
-                        <p>- Pitch your book</p>
-                        <p>- Explain why you really want to read it</p>
-                        <p>- What are your expectations from this book</p>
-                    </div>
-                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/Step2.png" class="img-responsive" alt="">
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/Step3.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2 class="steps">Define groups of 2 or 3</h2>
-                        <P>Based on your interest for each other's groups : create groups of 2 or 3.</P>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2 class="steps">Each participant reads 2 books</h2>
-                        <p>Set the reading time (15' to 25').</p>
-                        <p>Read it and take notes to be able to explain what you ave learned.</p>
-                        <p>- Read your first book</p>
-                        <p>- Exchange your book with another participant inside your group</p>
-                        <p>- Read the second book</p>
-                    </div>
-                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/Step4.png" class="img-responsive" alt="">
-                    </div>
-                </div>
+<main>
+	<section class="page-fullscreen text-center" id="home">
+		<div class="page-wrapper">
+			<h1>Xtrem Reading <span>Read 2 books in 1 hour</span></h1>
+			<p>A technique that allows you to read 2 books <br>in 1 hour in a collaborative way.</p>
+			<div class="overlay">
+				<div>
+					<h1>Xtrem Reading <span>Read 2 books in 1 hour</span></h1>
+					<p>A technique that allows you to read 2 books <br>in 1 hour in a collaborative way.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/Step5.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2 class="steps">Cross sharing</h2>
-                        <p>Spend 5' per book</p>
-                        <p>Each reader of the current book explains what they have discovered to the rest of the group.</p>
-                    </div>
-                </div>
+	<section class="section-1" id="why">
+		<div class="page-wrapper">
+			<h2 class="text-center">Why you should use it?</h2>
+			<div class="grid-flex grid-use">
+				<div class="column">
+					<div class="box-1">
+						<p><img src="images/xtrem-reading-icon-2.png"></p>
+						<h3>Boost your <br>collective intelligence</h3>
+						<p>
+							Collective intelligence strongly contributes 
+							to the shift of knowledge and power 
+							from the individual to the collective. 
+							Reading collectively helps you being 
+							motivated to read more books.
+						</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="box-1">
+						<p><img src="images/xtrem-reading-icon-1.png"></p>
+						<h3>Increase your <br>book retention</h3>
+						<p>
+							Because you read in a way you 
+							will present what you have taken 
+							from a book, you will increase 
+							your retention from the book.
+						</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="box-1">
+						<p><img src="images/xtrem-reading-icon-3.png"></p>
+						<h3>Do not read for <br>nothing anymore</h3>
+						<p>
+							Filter your entire library in a 
+							few sessions and prioritize your 
+							next readings.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                <div class="single-features">
-                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2 class="steps">Rate the book</h2>
-                        <p>Each xtrem reader evaluates the book he read.</p>
-                        <p>- Was it easy to read ?</p>
-                        <p>- Would I recommend it ?</p>
-                    </div>
-                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/Step4.png" class="img-responsive" alt="">
-                    </div>
-                </div>
+	<section class="section-1" id="howto">
+		<div class="page-wrapper">
+			<h2 class="text-center">How to?</h2>
+			<div class="grid-flex row-step v-align-middle">
+				<div class="column w-20">
+					<div class="step">1</div>
+				</div>
+				<div class="column w-30">
+					<img src="images/xtrem-reading-step-1.png" alt="">
+				</div>
+				<div class="column w-40">
+					<p>Each participant brings a book</p>
+					<p>Bring the book that you really want to read in a near future.</p>
+				</div>
+			</div>
 
-            </div>
-        </div>
-    </section>
+			<div class="grid-flex row-step v-align-middle">
+				<div class="column w-20">
+					<div class="step">2</div>
+				</div>
+				<div class="column w-30">
+					<img src="images/xtrem-reading-step-2.png" alt="">
+				</div>
+				<div class="column w-40">
+					<p>Share your choices</p>
+					<ul class="list-1">
+						<li>Pitch your book</li>
+						<li>Explain why you really want to read it</li>
+						<li>What are your expectations from this book</li>
+					</ul>
+				</div>
+			</div>
 
-    <section id="facilitation">
-        <div class="container">
-            <div class="row">
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image1.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Experienced and Enthusiastic</h2>
-                        <P>Pork belly leberkas cow short ribs capicola pork loin. Doner fatback frankfurter jerky meatball pastrami bacon tail sausage. Turkey fatback ball tip, tri-tip tenderloin drumstick salami strip steak.</P>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Built for the Responsive Web</h2>
-                        <P>Mollit eiusmod id chuck turducken laboris meatloaf pork loin tenderloin swine. Pancetta excepteur fugiat strip steak tri-tip. Swine salami eiusmod sint, ex id venison non. Fugiat ea jowl cillum meatloaf.</P>
-                    </div>
-                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image2.png" class="img-responsive" alt="">
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image3.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Experienced and Enthusiastic</h2>
-                        <P>Ut officia cupidatat anim excepteur fugiat cillum ea occaecat rump pork chop tempor. Ut tenderloin veniam commodo. Shankle aliquip short ribs, chicken eiusmod exercitation shank landjaeger spare ribs corned beef.</P>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+			<div class="grid-flex row-step v-align-middle">
+				<div class="column w-20">
+					<div class="step">3</div>
+				</div>
+				<div class="column w-30">
+					<img src="images/xtrem-reading-step-3.png" alt="">
+				</div>
+				<div class="column w-40">
+					<p>Define groups of 2 or 3</p>
+					<p>Based on your interest for each other's groups : <br>	create groups of 2 or 3.</p>
+				</div>
+			</div>
 
-    <section id="resources">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
-                        <h1 class="title">Happy Clients</h1>
-                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud </p>
-                    </div>
-                    <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client4.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client5.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client6.png" class="img-responsive" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
+			<div class="grid-flex row-step v-align-middle">
+				<div class="column w-20">
+					<div class="step">4</div>
+				</div>
+				<div class="column w-30">
+					<img src="images/xtrem-reading-step-4.png" alt="">
+				</div>
+				<div class="column w-40">
+					<p>Each participant reads 2 books</p>
+					<ul class="list-1">
+						<li>Set the reading time (15' to 25').</li>
+						<li>Read it and take notes to be able to explain what you ave learned.</li>
+						<li>Read your first book</li>
+						<li>Exchange your book with another participant inside your group</li>
+						<li>Read the second book</li>
+					</ul>
+				</div>
+			</div>
 
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center bottom-separator">
-                    <img src="images/home/under.png" class="img-responsive inline" alt="">
-                </div>
-                
-                <div class="col-sm-12">
-                    <div class="contact-info bottom">
-                        <h2>Contact</h2>
-                        <address>
-                        E-mail: <a href="mailto:xtremreading@gmail.com">xtremreading@gmail.com</a> <br> 
-                        </address>
-                    </div>
-                </div>
-                <div class="col-sm-12">
-                    <div class="copyright-text text-center">
-                        <p>&copy; <a target="_blank" href="https://www.linkedin.com/in/cedric-tamavond-b30ab917/">Cédric Tamavond</a> & <a target="_blank" href="https://www.linkedin.com/in/yoanthirion/">Yoan Thirion</a>. <br/>
-                        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
-                            <img src="images/ico-footer.png" alt=""  />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--/#footer-->
+			<div class="grid-flex row-step v-align-middle">
+				<div class="column w-20">
+					<div class="step">5</div>
+				</div>
+				<div class="column w-30">
+					<img src="images/xtrem-reading-step-5.png" alt="">
+				</div>
+				<div class="column w-40">
+					<p>Cross sharing</p>
+					<ul class="list-1">
+						<li>Spend 5' per book</li>
+						<li>Each reader of the current book explains what they have discovered to the rest of the group.</li>
+					</ul>
+				</div>
+			</div>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/lightbox.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>   
-</body>
-</html>
+			<div class="grid-flex row-step v-align-middle">
+				<div class="column w-20">
+					<div class="step">6</div>
+				</div>
+				<div class="column w-30">
+					<img src="images/xtrem-reading-step-4.png" alt="">
+				</div>
+				<div class="column w-40">
+					<p>Rate the book</p>
+					<p>Each xtrem reader evaluates the book he read.</p>
+					<ul class="list-1">
+						<li>Was it easy to read?</li>
+						<li>Would I recommend it?</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section-1" id="facilitation">
+		<div class="page-wrapper">
+			<h2 class="text-center">Facilitation</h2>
+			<div class="grid-flex grid-use">
+				<div class="column">
+					<p>
+						Collective intelligence strongly contributes to the shift of knowledge 
+						and power from the individual to the collective. Reading collectively helps you being motivated to read more books.
+					</p>
+				</div>
+				<div class="column">
+					<p>
+						Collective intelligence strongly contributes to the shift of knowledge 
+						and power from the individual to the collective. Reading collectively helps you being motivated to read more books.
+					</p>
+					<ul class="list-1">
+						<li>Pitch your book</li>
+						<li>Explain why you really want to read it</li>
+						<li>What are your expectations from this book</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-1" id="ressources">
+		<div class="page-wrapper">
+			<h2 class="text-center">Ressources</h2>
+			<div class="grid-flex grid-use">
+					<div class="column text-center">
+						<a href="" target="_blank">
+							<img src="images/xtrem-reading-print-1.jpg" style="box-shadow: 0 0 11px 0px rgba(0, 0, 0, 0.2);">
+							<p style="margin-top: 10px;color: #000000;font-weight: 700;">Print the game modes</p>
+						</a>
+					</div>
+					<div class="column text-center">
+						<a href="" target="_blank">
+							<img src="images/xtrem-reading-print-2.jpg" style="box-shadow: 0 0 11px 0px rgba(0, 0, 0, 0.2);">
+							<p style="margin-top: 10px;color: #000000;font-weight: 700;">Print the cards</p>
+						</a>
+					</div>
+					<div class="column text-center">
+						<a href="" target="_blank">
+							<img src="images/xtrem-reading-print-3.jpg" style="box-shadow: 0 0 11px 0px rgba(0, 0, 0, 0.2);">
+							<p style="margin-top: 10px;color: #000000;font-weight: 700;">Print the score boards</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+
+<footer>
+  <img src="images/xtrem-reading-firl-surf.png" alt="" class="girl-surf">
+  <img src="images/xtrem-reading-shark.png" alt="" class="shark">
+  
+  <div class="content">
+    <p><img src="images/ico-footer.png" alt=""></p>
+    © 2019 - <a href="https://www.linkedin.com/in/cedric-tamavond-b30ab917/" target="_blank">Cédric Tamavond</a> & <a href="https://www.linkedin.com/in/yoanthirion/" target="_blank">Yoan Thirion</a>. 
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="/craft-challenges/assets/images/ico-footer.png" alt=""></a>
+  </div>
+</footer>
