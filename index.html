@@ -18,16 +18,16 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
   <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ > 
   <link rel="stylesheet" type="text/css" href="css/buddy.min.css">
+  <link rel="stylesheet" type="text/css" href="css/konami.css">
   <script type="text/javascript" src="js/buddy.min.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139140754-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-139140754-1');
-</script>
+  <script type="text/javascript" src="js/konami.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139140754-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-139140754-1');
+	</script>
 </head>
 <body>
   <div id="pageNavOverlay"></div>
@@ -63,6 +63,33 @@
 
 
 <main>
+	<div>
+		<img id="konamiImage" class="konami" src="images/konami.gif"/>
+		<script>
+		function launchEgg() {
+			return new Promise(function (resolve, reject) {
+					var konamiImage = document.getElementById("konamiImage");
+					konamiImage.style.display = 'inherit';
+					var currentPosition = 0;
+					
+					var id = setInterval(() => {
+						if (currentPosition == document.body.offsetWidth) {
+							clearInterval(id);
+							konamiImage.style.display = 'none';
+							resolve();                     
+						} else {
+							currentPosition++; 
+							konamiImage.style.left = currentPosition + 'px'; 
+						}
+				}, 10);
+			}); 
+		}
+	
+		var konami = new Konami(launchEgg);
+		konami.load();
+	
+		</script>
+	</div>
 	<section class="page-fullscreen text-center" id="home">
 		<div class="page-wrapper">
 			<h1>Xtrem Reading <span>Read 2 books in 1 hour</span></h1>
@@ -301,7 +328,6 @@
 		</div>
 	</section>
 </main>
-
 
 <footer>
   <img src="images/xtrem-reading-firl-surf.png" alt="" class="girl-surf">
