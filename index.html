@@ -16,9 +16,10 @@
   <meta property="og:description"        content="A technique that allows you to read 2 books in 1 hour in a collaborative way." />
 
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
-  <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ > 
+  <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
   <link rel="stylesheet" type="text/css" href="css/buddy.min.css">
   <link rel="stylesheet" type="text/css" href="css/konami.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
   <script type="text/javascript" src="js/buddy.min.js"></script>
   <script type="text/javascript" src="js/konami.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139140754-1"></script>
@@ -71,23 +72,23 @@
 					var konamiImage = document.getElementById("konamiImage");
 					konamiImage.style.display = 'inherit';
 					var currentPosition = 0;
-					
+
 					var id = setInterval(() => {
 						if (currentPosition == document.body.offsetWidth) {
 							clearInterval(id);
 							konamiImage.style.display = 'none';
-							resolve();                     
+							resolve();
 						} else {
-							currentPosition++; 
-							konamiImage.style.left = currentPosition + 'px'; 
+							currentPosition++;
+							konamiImage.style.left = currentPosition + 'px';
 						}
 				}, 10);
-			}); 
+			});
 		}
-	
+
 		var konami = new Konami(launchEgg);
 		konami.load();
-	
+
 		</script>
 	</div>
 	<section class="page-fullscreen text-center" id="home">
@@ -112,10 +113,10 @@
 						<p><img src="images/xtrem-reading-icon-2.png"></p>
 						<h3>Boost your <br>collective intelligence</h3>
 						<p>
-							Collective intelligence strongly contributes 
-							to the shift of knowledge and power 
-							from the individual to the collective. 
-							Reading collectively helps you being 
+							Collective intelligence strongly contributes
+							to the shift of knowledge and power
+							from the individual to the collective.
+							Reading collectively helps you being
 							motivated to read more books.
 						</p>
 					</div>
@@ -125,9 +126,9 @@
 						<p><img src="images/xtrem-reading-icon-1.png"></p>
 						<h3>Increase your <br>book retention</h3>
 						<p>
-							Because you read in a way you 
-							will present what you have taken 
-							from a book, you will increase 
+							Because you read in a way you
+							will present what you have taken
+							from a book, you will increase
 							your retention from the book.
 						</p>
 					</div>
@@ -137,8 +138,8 @@
 						<p><img src="images/xtrem-reading-icon-3.png"></p>
 						<h3>Do not read for <br>nothing anymore</h3>
 						<p>
-							Filter your entire library in a 
-							few sessions and prioritize your 
+							Filter your entire library in a
+							few sessions and prioritize your
 							next readings.
 						</p>
 					</div>
@@ -257,8 +258,8 @@
 						<p><img src="images/facilitation-1.png"></p>
 						<h3>Pace</h3>
 						<p>
-							Pace is really important during a session 
-							but be careful, don't oppress people 
+							Pace is really important during a session
+							but be careful, don't oppress people
 							by repeating the time elapsed or left.
 							<br/>Display a <a href="http://www.timer-tab.com/" target="_blank">timer</a> instead on a big screen for example.
 						</p>
@@ -269,9 +270,9 @@
 						<p><img src="images/facilitation-2.png"></p>
 						<h3>Board</h3>
 						<p>
-							After each session you can feed 
+							After each session you can feed
 							a physical or <a href="https://trello.com/" target="_blank">virtual board</a> to categorize books you have read.
-							You can use "recommendation" for the columns names and "easy to read" as labels like in this <a href="images/xtrem-trello.png" target="_blank">example</a>.  
+							You can use "recommendation" for the columns names and "easy to read" as labels like in this <a href="images/xtrem-trello.png" target="_blank">example</a>.
 						</p>
 					</div>
 				</div>
@@ -284,7 +285,7 @@
 							It can help people to focus and release the pressure of the exercice.
 						</p>
 					</div>
-				</div>				
+				</div>
 			</div>
 		</div>
 	</section>
@@ -327,14 +328,22 @@
 			</div>
 		</div>
 	</section>
+
+  <section class="section-1" id="resources">
+    <div class="page-wrapper">
+      <h2 class="text-center">Book a session now!</h2>
+
+      <p class="text-center"><a href="https://share.hsforms.com/1yZKri1ZKTaeVeqKnOx4pMA32gl4" class="btn bg-main-color">Book a session now!<a></p>
+    </div>
+  </section>
 </main>
 
 <footer>
   <img src="images/xtrem-reading-firl-surf.png" alt="" class="girl-surf">
   <img src="images/xtrem-reading-shark.png" alt="" class="shark">
-  
+
   <div class="content">
     <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="images/ico-footer.png" alt=""></a></p>
-    © 2019 - <a href="https://www.linkedin.com/in/cedric-tamavond-b30ab917/" target="_blank">Cédric Tamavond</a> & <a href="https://www.linkedin.com/in/yoanthirion/" target="_blank">Yoan Thirion</a>. 
+    © 2019 - <a href="https://www.linkedin.com/in/cedric-tamavond-b30ab917/" target="_blank">Cédric Tamavond</a> & <a href="https://www.linkedin.com/in/yoanthirion/" target="_blank">Yoan Thirion</a>.
   </div>
 </footer>
